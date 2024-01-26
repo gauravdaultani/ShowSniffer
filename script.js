@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function searchShow() {
         const showName = document.getElementById('showName').value;
 
-        // Fetch data from TMDb API (replace 'API_KEY' with your actual TMDb API key)
+        // Fetch data from TMDb API (replace API_KEY with your actual TMDb API key)
         fetch(`https://api.themoviedb.org/3/search/tv?api_key=80df68fb8b4e911eac414803565bd134&query=${showName}`)
             .then(response => response.json())
             .then(data => {
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     resultsContainer.innerHTML = `
                         <h2>${show.name}</h2>
                         <p>${show.overview}</p>
-                        <p>First Air Date: ${show.first_air_date}</p>
                     `;
                 } else {
                     resultsContainer.innerHTML = '<p>No results found.</p>';
@@ -28,4 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
             searchShow();
         }
     });
+
+    const searchButton = document.getElementById('searchButton'); // replace 'searchButton' with the actual ID of your search button
+    searchButton.addEventListener('click', searchShow);
 });
+
