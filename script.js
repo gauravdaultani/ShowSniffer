@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const showName = document.getElementById('showName').value;
 
         // Fetch data from TMDb API (replace 'API_KEY' with your actual TMDb API key)
-        fetch(`https://api.themoviedb.org/3/search/tv?api_key=API_KEY&query=${showName}`)
+        fetch(`https://api.themoviedb.org/3/search/tv?api_key=80df68fb8b4e911eac414803565bd134&query=${showName}`)
             .then(response => response.json())
             .then(data => {
                 // Process the API response and update the results section
