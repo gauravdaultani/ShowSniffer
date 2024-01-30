@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 .container {
     max-width: 600px;
     min-height: 30vh;
@@ -14,7 +13,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 h1 {
     text-align: center;
     color: #333;
@@ -24,13 +22,11 @@ label {
     display: block;
     margin-bottom: 10px;
 }
-
 input {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
 }
-
 button {
     background-color: #007BFF;
     color: #fff;
@@ -39,11 +35,9 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
 #results {
     margin-top: 20px;
 }
